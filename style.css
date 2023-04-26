@@ -1,4 +1,37 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+}
+
+#imagem {
+  width: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#email {
+  width: 120px;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+#senha {
+  width: 120px;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+header h1{
+color: white;
 }
