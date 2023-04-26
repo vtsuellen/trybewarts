@@ -44,4 +44,30 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  background-color: pink;
+}
+
+#trybewarts-forms-logo{
+ height: 500px; 
+}
+
+#input-name {
+  width: 250px;
+  border-radius: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+#input-lastname {
+  width: 250px;
+  border-radius: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+#input-email {
+   width: 250px;
+  border-radius: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
