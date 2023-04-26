@@ -35,3 +35,13 @@
 header h1 {
   color: white;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form{
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
