@@ -50,6 +50,7 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+  width: 200px;
 }
 
 #input-name {
@@ -72,6 +73,7 @@ main {
   padding-top: 7px;
   padding-bottom: 7px;
 }
+
 #container {
   display: flex;
   align-items: stretch;
