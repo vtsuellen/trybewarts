@@ -45,10 +45,11 @@ main {
   width: 675px;
   flex-direction: column;
   background-color: pink;
+  gap: 5px;
 }
 
 #trybewarts-forms-logo {
-  height: 500px; 
+  height: 500px;
 }
 
 #input-name {
@@ -67,6 +68,18 @@ main {
 
 #input-email {
   width: 250px;
+  border-radius: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+#container {
+  display: flex;
+  align-items: stretch;
+  gap: 5px;
+}
+
+#house {
+  width: 200px;
   border-radius: 6px;
   padding-top: 7px;
   padding-bottom: 7px;
