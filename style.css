@@ -6,7 +6,7 @@ body {
   background-image: url('fundoHogwarts.jpg');
   background-size: cover;
   background-attachment: fixed;
-  color: white; 
+  color: white;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
