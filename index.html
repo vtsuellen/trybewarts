@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--Cria Header, Adicione o logotipo da Trybewarts, Cria um título,Acrescente um formulário de login no header.  -->
     <header class="header">
       <img
         id="imagem"
@@ -23,6 +24,7 @@
       </form>
     </header>
     <main>
+        <!--Adiciona um formulário no corpo da página-->
       <form id="evaluation-form">
         <h3>Formulário de Avaliação</h3>
         <div id="container">
@@ -41,6 +43,7 @@
             name="email"
             placeholder="Email"
           />
+          <!-- Acrescenta um select ao formulário, Casas-->
           <label for="house">Casa</label>
           <select id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -49,40 +52,38 @@
             <option id="pytherina-house" value="Pytherina">Pytherina</option>
           </select>
         </div>
-        <label for="" id="label-family"
-          >Qual sua família?</label>
-          <label for="Frontend">
-            <input
-              type="radio"
-              name="family"
-              value="Frontend"
-              id="Frontend"
-            />Frontend</label
-          >
-          <label for="Backend">
-            <input
-              type="radio"
-              name="family"
-              value="Backend"
-              id="Backend"
-            />Backend</label
-          >
-          <label for="FullStack">
-            <input
-              type="radio"
-              name="family"
-              value="FullStack"
-              id="FullStack"
-            />FullStack</label
-          >
+        <!--Adiciona 3 inputs do tipo radio ao formulário, Familia-->
+        <label for="" id="label-family">Qual sua família?</label>
+        <label for="Frontend">
+          <input
+            type="radio"
+            name="family"
+            value="Frontend"
+            id="Frontend"
+          />Frontend</label
+        >
+        <label for="Backend">
+          <input
+            type="radio"
+            name="family"
+            value="Backend"
+            id="Backend"
+          />Backend</label
+        >
+        <label for="FullStack">
+          <input
+            type="radio"
+            name="family"
+            value="FullStack"
+            id="FullStack"
+          />FullStack</label
+        >
+        <!--Crie inputs do tipo checkbox, Conteudos-->
         <label id="label-content"
-          >Qual conteúdo você está com mais vontade de aprender?</label>
+          >Qual conteúdo você está com mais vontade de aprender?</label
+        >
         <label for="HoFs">
-          <input 
-           type="checkbox" 
-           id="HoFs" 
-           class="subject" 
-           value="HoFs" />
+          <input type="checkbox" id="HoFs" class="subject" value="HoFs" />
           HoFs</label
         >
         <label for="Jest">
@@ -94,41 +95,56 @@
           />Jest</label
         >
         <label for="Promises">
-        <input
-          type="checkbox"
-          id="Promises"
-          class="subject"
-          value="Promises"
-        />Promises</label
+          <input
+            type="checkbox"
+            id="Promises"
+            class="subject"
+            value="Promises"
+          />Promises</label
         >
         <label for="react">
-        <input 
-          type="checkbox" 
-          id="react" 
-          class="subject" 
-          value="React" 
-        /> React </label
-        >
+          <input 
+           type="checkbox"
+           id="react" 
+           class="subject" 
+           value="React" />
+          React
+        </label>
         <label for="sql">
-        <input
-          type="checkbox" 
-          id="sql" 
-          class="subject" 
-          value="SQL" 
-        />SQL</label
+          <input
+            type="checkbox"
+            id="sql"
+            class="subject"
+            value="SQL"
+          />SQL</label
         >
         <label for="python">
-        <input 
-          type="checkbox" 
-          id="python" 
-          class="subject" 
-          value="Python" 
-        />Python</label
+          <input
+            type="checkbox"
+            id="python"
+            class="subject"
+            value="Python"
+          />Python</label
         >
+        <!--Cria um campo de avaliação.-->
+        <label id="label-rate">
+          >Como você avalia a Trybewarts?
+          <input type="radio" name="rate" value="1" />1
+          <input type="radio" name="rate" value="2" />2
+          <input type="radio" name="rate" value="3" />3
+          <input type="radio" name="rate" value="4" />4
+          <input type="radio" name="rate" value="5" />5
+          <input type="radio" name="rate" value="6" />6
+          <input type="radio" name="rate" value="7" />7
+          <input type="radio" name="rate" value="8" />8
+          <input type="radio" name="rate" value="9" />9
+          <input type="radio" name="rate" value="10" />10
+        </label>
+        <!--Cria uma textarea, 500 caracteres-->
+        <label class="textarea">Deixe seu comentário:</label>
+        <textarea maxlength="500"></textarea>
       </form>
-       <img
-        id="trybewarts-forms-logo"
-        src="images/trybewarts-colored.svg"/>
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" />
     </main>
     <script src="script.js"></script>
   </body>
