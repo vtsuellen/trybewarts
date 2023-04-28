@@ -13,3 +13,33 @@ form.addEventListener('submit', (event) => {
     alert('Email ou senha inválidos.');
   }
 });
+
+// Está função conta os caracteres
+
+const contarCaracteres = () => {
+  const textarea = document.getElementById('textarea');
+  const counter = document.getElementById('counter');
+  const maxLength = 500;
+  const currentLength = textarea.value.length;
+  const remainingLength = maxLength - currentLength;
+  counter.textContent = remainingLength;
+};
+
+const textarea = document.getElementById('textarea');
+textarea.addEventListener('keyup', contarCaracteres);
+
+// Desabilite o botão caso o checkbox não esteja selecionado
+const agreementCheckbox = document.getElementById('agreement');
+const submitButton = document.getElementById('submit-btn');
+// Aqui o botão é desabilitado
+submitButton.disabled = true;
+// Habilita o botão cheked quando marcado
+agreementCheckbox.addEventListener('change', () => {
+  if (agreementCheckbox.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+});
+
+// Substitua o formulário pelas informações da pessoa estudante
