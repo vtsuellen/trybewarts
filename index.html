@@ -76,7 +76,7 @@
         <hr />
         <div class="questions">
           <div class="family">
-            <label for="" id="label-family">Qual sua família?</label>
+            <label id="label-family">Qual sua família?</label>
             <label for="Frontend">
               <input
                 type="radio"
@@ -108,59 +108,66 @@
               >Qual conteúdo você está com mais vontade de aprender?</label
             >
             <div class="materias">
-            <div class="primeira">
-              <label for="HoFs">
-                <input type="checkbox" id="HoFs" class="subject" value="HoFs" />
-                HoFs</label
-              >
-              <label for="Jest">
-                <input
-                  type="checkbox"
-                  id="Jest"
-                  class="subject"
-                  value="Jest"
-                />Jest</label
-              >
-              <label for="Promises">
-                <input
-                  type="checkbox"
-                  id="Promises"
-                  class="subject"
-                  value="Promises"
-                />Promises</label
-              ></div>
+              <div class="primeira">
+                <label for="HoFs">
+                  <input
+                    type="checkbox"
+                    id="HoFs"
+                    class="subject"
+                    value="HoFs"
+                  />
+                  HoFs</label
+                >
+                <label for="Jest">
+                  <input
+                    type="checkbox"
+                    id="Jest"
+                    class="subject"
+                    value="Jest"
+                  />Jest</label
+                >
+                <label for="Promises">
+                  <input
+                    type="checkbox"
+                    id="Promises"
+                    class="subject"
+                    value="Promises"
+                  />Promises</label
+                >
+              </div>
               <div class="segunda">
-              <label for="react">
-                <input
-                  type="checkbox"
-                  id="react"
-                  class="subject"
-                  value="React"
-                />
-                React
-              </label>
-              <label for="sql">
-                <input
-                  type="checkbox"
-                  id="sql"
-                  class="subject"
-                  value="SQL"
-                />SQL</label
-              >
-              <label for="python">
-                <input
-                  type="checkbox"
-                  id="python"
-                  class="subject"
-                  value="Python"
-                />Python</label
-              ></div>
+                <label for="react">
+                  <input
+                    type="checkbox"
+                    id="react"
+                    class="subject"
+                    value="React"
+                  />
+                  React
+                </label>
+                <label for="sql">
+                  <input
+                    type="checkbox"
+                    id="sql"
+                    class="subject"
+                    value="SQL"
+                  />SQL</label
+                >
+                <label for="python">
+                  <input
+                    type="checkbox"
+                    id="python"
+                    class="subject"
+                    value="Python"
+                  />Python</label
+                >
+              </div>
             </div>
           </div>
         </div>
         <!--Cria um campo de avaliação.-->
         <hr />
-        <label id="label-rate" >Como você avalia a Trybewarts?</label>
+        <label id="label-rate">Como você avalia a Trybewarts?</label>
         <div class="radio">
           <label for="rate1"
             >1 <input type="radio" name="rate" id="rate1" value="1"
@@ -195,10 +202,7 @@
         </div>
         <!--Cria uma textarea, 500 caracteres-->
         <label class="textarea">Deixe seu comentário:</label>
-        <textarea
-          id="textarea"
-          maxlength="500"
-        ></textarea>
+        <textarea id="textarea" maxlength="500"></textarea>
         <div id="counter">500</div>
         <!--Cria uma checkbox que servirá para validar as informações digitadas pela pessoa usuária-->
         <label id="label-infos" for="agreement">
@@ -208,12 +212,20 @@
         <!--Cria um botão de "Enviar" para submeter o formulário-->
         <button type="submit" id="submit-btn">Enviar</button>
       </form>
+      <!--Formulario secundario com informaçãoes-->
+      <form id="form-data">
+        <p id="returnNome">Nome: </p>
+        <p id="returnEmail">Email: </p>
+        <p id="returnCasa">Casa: </p>
+        <p id="returnFamilia">Família: </p>
+        <p id="returnMaterias">Matérias: </p>
+        <p id="returnAvaliacao">Avaliação: </p>
+        <p id="returnObs">Observações: </p>
+      </form>
       <!--Imagem lateral Trybewarts -->
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" />
       <!--Rodape-->
-      <footer class="footer-item">
-        Direitos reservados à Trybewarts©
-    </footer>
+      <footer class="footer-item">Direitos reservados à Trybewarts©</footer>
     </main>
     <script src="script.js"></script>
   </body>
