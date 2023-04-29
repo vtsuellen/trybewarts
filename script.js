@@ -44,7 +44,6 @@ agreementCheckbox.addEventListener('change', () => {
 
 // Substitua o formulário pelas informações da pessoa estudante
 
-const btn = document.querySelector('#submit-btn');
 const formPrincipal = document.querySelector('#evaluation-form');
 const formSecundario = document.querySelector('#form-data');
 const returnName = document.querySelector('#input-name');
